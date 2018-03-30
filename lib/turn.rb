@@ -29,6 +29,6 @@ end
 def move(board, input, token = "X")
     index = input_to_index(input)
     if valid_move?
-        display_board(board, index)
+        display_board(board)
     end
 end
