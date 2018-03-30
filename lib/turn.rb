@@ -23,7 +23,7 @@ def valid_move?(board, index)
 end
 
 def input_to_index(input)
-    input.to_int
+    input.to_i
 end
 
 def move(board, input, token = "X")
