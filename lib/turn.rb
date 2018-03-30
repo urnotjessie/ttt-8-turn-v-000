@@ -26,12 +26,9 @@ def input_to_index(user_input)
     user_input.to_i - 1
 end
 
-def move(board, user_input, char = "X")
-    index = user_input.to_i
-    if valid_move?(board, index)
-        board[index] = char
-    end
-        display_board(board)
+def move(board, index, char = "X")
+    board[index] = char
+    display_board(board)
 end
 
 def turn(board)
