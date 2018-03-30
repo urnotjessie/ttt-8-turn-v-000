@@ -30,6 +30,7 @@ def move(board, input, char = "X")
     index = input_to_index(input)
     if valid_move?(board, index)
         board[index] = char
+    end
         display_board(board)
     end
 end
