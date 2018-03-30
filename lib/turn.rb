@@ -30,5 +30,3 @@ def move(board, input, token = "X")
         display_board(board, index)
     end
 end
-
-    
