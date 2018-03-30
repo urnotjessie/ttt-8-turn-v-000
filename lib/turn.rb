@@ -22,12 +22,12 @@ def valid_move?(board, index)
     end
 end
 
-def input_to_index(input)
+def input_to_index(user_input)
     input.to_i - 1
 end
 
-def move(board, input, char = "X")
-    index = input_to_index(input)
+def move(board, user_input, char = "X")
+    index = input_to_index(user_input)
     if valid_move?(board, index)
         board[index] = char
     end
