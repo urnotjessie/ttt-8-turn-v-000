@@ -37,5 +37,5 @@ def turn(board)
   while !index?(1, 9)
       puts "Please enter 1-9:"
   end
-  move(board, user_input)
+  move(board, index)
 end
