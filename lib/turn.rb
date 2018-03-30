@@ -19,3 +19,16 @@ def valid_move?(board, index)
         true
     end
 end
+
+def input_to_index(input)
+    input.to_int
+end
+
+def move(board, input, token = "X")
+    index = input_to_index(input)
+    if valid_move?
+        display_board(board, index)
+    end
+end
+
+    
